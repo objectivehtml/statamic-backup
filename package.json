@@ -1,0 +1,34 @@
+{
+  "name": "backup",
+  "version": "0.1.0",
+  "description": "",
+  "readme": "./docs/README.md",
+  "scripts": {
+    "symlink": "ln -sf `pwd`/dist ../../../public/vendor/events",
+    "watch": "node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "prod": "node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "npm run prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "ical-expander": "^3.0.0",
+    "mix-tailwindcss": "^1.2.0",
+    "v-calendar": "^1.0.8",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "object-path": ">=0.11.5",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "^1.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2"
+  }
+}

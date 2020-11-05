@@ -1,0 +1,32 @@
+{
+    "name": "objectivehtml/statamic-backup",
+    "readme": "README.md",
+    "authors": [{
+        "name": "Justin Kimbrell",
+        "email": "support@objectivehtml.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Objectivehtml\\Backup\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Backup",
+            "description": "Backup addon",
+            "editions": ["free", "pro"]
+        },
+        "laravel": {
+            "providers": [
+                "Objectivehtml\\Backup\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.2.5",
+        "statamic/cms": "^3.0",
+        "rlanvin/php-rrule": "^2.2",
+        "gitonomy/gitlib": "^1.2",
+        "illuminate/config": "^8.13"
+    }
+}
